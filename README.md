@@ -2,7 +2,7 @@
 
 Generates CSV files to be used in LoadData module (CellProfiler).
 
-When analysing images with [CellProfiler](https://github.com/CellProfiler/CellProfiler) (1), you might want to use LoadData to replace the Input modules. We have used LoadData together with [Distributed-CellProfiler](https://github.com/DistributedScience/Distributed-CellProfiler) to run analysis inside AWS. 
+When analysing images with [CellProfiler](https://github.com/CellProfiler/CellProfiler) (1), you might want to use LoadData to replace the Input modules. We have used LoadData together with [Distributed-CellProfiler](https://github.com/DistributedScience/Distributed-CellProfiler) (2) to run analysis inside AWS. 
 
 With this notebook you can:
 
@@ -13,11 +13,12 @@ With this notebook you can:
 
 Python > 3.9
 
-    ```
-    pip install easygui
-    pip install ipywidgets
-    pip install pyperclip
-    ```
+```
+pip install easygui
+pip install ipywidgets
+pip install pyperclip
+```
 
 ## References
 (1) Stirling DR, Swain-Bowden MJ, Lucas AM, Carpenter AE, Cimini BA, Goodman A (2021). CellProfiler 4: improvements in speed, utility and usability. BMC Bioinformatics, 22 (1), 433. . PMID: 34507520 PMCID: PMC8431850.
+(2) https://arxiv.org/abs/2210.01073
