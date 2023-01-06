@@ -11,7 +11,11 @@ With this notebook you can:
 
 ## Requirements
 
-Python > 3.9
+Create an Anaconda Environment and pip install the following libraries:
+
+```
+conda create --name loaddata python=3.9
+```
 
 ```
 pip install easygui
@@ -19,6 +23,18 @@ pip install ipywidgets
 pip install pyperclip
 ```
 
+## Use
+
+1. Clone this repository on your local computer. Open an Anaconda prompt inside the cloned folder and activate the environment:
+
+```
+conda activate loaddata
+```
+
+2. Open the notebook and follow the instructions there.
+
+
 ## References
 (1) Stirling DR, Swain-Bowden MJ, Lucas AM, Carpenter AE, Cimini BA, Goodman A (2021). CellProfiler 4: improvements in speed, utility and usability. BMC Bioinformatics, 22 (1), 433. . PMID: 34507520 PMCID: PMC8431850.
+
 (2) https://arxiv.org/abs/2210.01073
