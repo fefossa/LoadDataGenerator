@@ -50,8 +50,13 @@ def generate_load_data(input_folder, ch_dic):
             matches = re.search(regex, f)
             if matches:
                 channels.append(matches.group('Channel'))
-        channels = np.array(channels)
+        # channels = np.array(channels)
         ch_unique = np.unique(channels)
+        # check number of inputs channels == channels found
+        number_of_channel_input = len(ch_dic)
+        number_of_channel_regex = len(ch_unique)
+        if number_of_channel_input != number_of_channel_regex:
+            print(f"WARNING: The number of channels you gave ({number_of_channel_input}) are different from the ones we found ({number_of_channel_regex}).")
         #create columns with files and pathnames
         temp_list = []
         illum_list = []
